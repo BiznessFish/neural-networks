@@ -1,7 +1,11 @@
 # neural-networks
 
 
-Here I've implemented a (somewhat inefficient) multilayer feedforward network from scratch for both classification and regression, along with an auto-encoder to compare performance between different model types
+Here I've implemented a (somewhat inefficient) multilayer feedforward network from scratch for both classification and regression, along with an auto-encoder to compare performance between different model types.
+
+Five fold cross validation is utilized to configure hyperparameters and evaluate model performance. For the classification tasks, model evaluation is done through a simple accuracy measure, and for regression tasks, model evaluation is done through mean squared error. Performance between models is compared through a *t*-test for comparison of two means. 
+
+All models are also compared against a "baseline" model, simple majority model. For regression tasks, this means that we use the mean response across all training points. For classification tasks, it simply outputs the most common class. 
 
 Full writeup and discussion of results is in the [Neural_Networks_Writeup.pdf](/Neural_Networks_Writeup.pdf) file.
 
